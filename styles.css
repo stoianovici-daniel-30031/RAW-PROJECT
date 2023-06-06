@@ -1,0 +1,71 @@
+
+  #main-page .slide-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+    height: 100vh; /* Set container height to full viewport height */
+    position: relative; /* Add relative positioning to create a stacking context */
+  }
+  
+  #main-page .slide {
+    margin: 0; /* Add equal spacing between slides */
+    position: relative; /* Add relative positioning to contain absolutely positioned elements */
+  }
+  
+  #main-page .slide img {
+    width: 100vw; /* Set width to 100% of the viewport width */
+  height: 100%;
+    
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  #main-page .slide h2 {
+    position: absolute;
+    top: 33.3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    font-family: "Star Jedi", sans-serif;
+    z-index: 1; /* Ensure text appears on top of the image */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a drop shadow effect */
+  }
+  
+  #main-page .slide:first-child {
+    margin-top: 0; /* Remove top margin for the first slide */
+    margin-bottom: auto; /* Push the first slide to the top */
+    height: 33.3vh; /* Set height to 33% of the viewport height */
+  }
+  
+  #main-page .slide:nth-child(n+2) {
+    margin-top: auto; /* Push the remaining slides to the bottom */
+    margin-bottom: 0; /* Remove bottom margin for the remaining slides */
+    height: calc((100vh - 33.3vh) / 2); /* Set height to equal portions of the remaining space */
+  }
+  #main-page .enlarge-image {
+    transition: transform 0.3s ease;
+  }
+  
+  #main-page .enlarge-image:hover {
+    transform: scale(1.2);
+  }
+  #main-page a {
+    color: whitesmoke; /* Specify your desired color */
+    text-decoration: none; /* Remove underline */
+  }
+
+  /* CSS styles when hovering over the link */
+  #main-page a:hover {
+    color: white; /* Specify your desired hover color */
+  }
+
+ /*                                 CLONES PAGE                    */
+  #clones-page {
+  
+     background-color: #131313;
+
+   }
+   
