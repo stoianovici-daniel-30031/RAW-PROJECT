@@ -88,4 +88,40 @@ background-color: #131313;
      background-color: #131313;
 
    }
-   
+   #clones-page .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #clones-page .box {
+    font-family: "Star Jedi", sans-serif;
+    width: 300px;
+    background-color: #212121;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    outline-style: solid;
+    outline-color: #4D4D4D;
+    outline-width: thin;
+  }
+
+  #clones-page .box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  #clones-page .box h2 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  #clones-page .box p {
+    margin-bottom: 0;
+    font-size:  30px;
+  }
