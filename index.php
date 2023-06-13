@@ -16,17 +16,18 @@
     <div class="slide">
       <!-- Content for the first slide option -->
       <img src="images/clone.png" alt="Clone trooper" class="enlarge-image" width="500" height="200">
-      <a href="pages/clones.html"><h2>CLONES</h2></a>
+      <a href="pages/clones.php"><h2>CLONES</h2></a>
       
     </div>
     <div class="slide">
       <!-- Content for the second slide option -->
-      <a href="pages/bountyhunters.html"><h2>BOUNTY HUNTERS</h2></a>
+      <a href="pages/bountyhunters.php"><h2>BOUNTY HUNTERS</h2></a>
       <img src="images/bountyhunters.png" alt="Bounty Hunters" class="enlarge-image" width="500" height="200">
     </div>
+    
     <div class="slide">
       <!-- Content for the third slide option -->
-      <a href="pages/fanclones.html"><h2>FAN-CLONES</h2></a>
+      <a href="pages/fanclones.php"><h2>FAN-CLONES</h2></a>
       <img src="images/fanclones.png" alt="Fan clones" class="enlarge-image" width="500" height="200">
     </div>
   </div>
