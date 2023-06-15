@@ -21,13 +21,13 @@ function corectez($sir) {
   $eroare = '';
 
   if(empty($_POST['nume'])) {
-    $eroare .= '<p>Nu ați introdus numele!</p>';
+    $eroare .= '<p>Nu ați introdus titlul!</p>';
   } else {
     $nume = corectez($_POST['nume']);
   }
 
   if(empty($_POST['numerotare'])) {
-    $eroare .= '<p>Nu ați introdus o numerotare!</p>';
+    $eroare .= '<p>Nu ați introdus numerotare!</p>';
   } else {
     $numerotare = corectez($_POST['numerotare']);
   }
@@ -52,8 +52,8 @@ function corectez($sir) {
     $nr = mysqli_insert_id($cnx);
     //redenumesc fisierul continand imaginea si il copiez in directorul poze din site (/htdocs/FamiliaMea/poze)
 
-    $poza_r = "clone".$nr.".".strtolower($extensie);  
-    $cale = "../../images/$poza_r";              
+    $poza_r = "e".$nr.".".strtolower($extensie);  //  Numele incepe cu 'e', urmeaza valoarea cheii primare si apoi extensia. Exemplu: e3.png
+    $cale = "../../images/$poza_r";              //  Fiind in directorul /FamiliaMea/apliFamilia/formulare, calea e mai complicata!
     $rezultat = move_uploaded_file($nmtmp, $cale);    
     // schimb denumirea fisierului in articolul scris
     $cdamodif = "UPDATE clones set imagine='$poza_r' where id=$nr";
